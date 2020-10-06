@@ -17,6 +17,11 @@ body {
     }
 }
 
+.process-body {
+    background-color: #FFFFFF;
+    color: black;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
