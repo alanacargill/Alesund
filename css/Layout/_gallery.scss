@@ -1,0 +1,157 @@
+@use 'sass:math';
+
+@mixin set-grid-item ($grid-col-start, $grid-col-end, $grid-row-start, $grid-row-end) {
+    grid-column-start: $grid-col-start;
+    grid-column-end: $grid-col-end;
+    grid-row-start: $grid-row-start;
+    grid-row-end: $grid-row-end;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    margin: 0;
+    .gallery-item {
+        width: 100%;
+        height: 264px;
+        display: block;     
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            margin: 0;
+            display: block;
+        }
+    }
+    .gallery-item-location {
+        margin-bottom: 60px;
+    }
+}
+
+@for $i from 1 through 4 {
+    #gallery-item-#{$i * 3 - 2} {
+        @include set-grid-item( 1, span 4, #{$i}, span 1)
+    }
+    #gallery-item-#{$i * 3 - 1} {
+        @include set-grid-item( 5, span 4, #{$i}, span 1)
+    }
+    #gallery-item-#{$i * 3} {
+        @include set-grid-item( 9, span 4, #{$i}, span 1)
+    }
+}
+
+#gallery-item-1 {
+    @include set-grid-item(1, span 4, 1, span 1);
+}
+
+#gallery-item-2 {
+    @include set-grid-item(5, span 4, 1, span 1);
+}
+
+#gallery-item-3 {
+    @include set-grid-item(9, span 4, 1, span 1);
+}
+
+#gallery-item-4 {
+    @include set-grid-item(1, span 4, 2, span 1);
+}
+
+#gallery-item-5 {
+    @include set-grid-item(5, span 4, 2, span 1);
+}
+
+#gallery-item-6 {
+    @include set-grid-item(9, span 4, 2, span 1);
+}
+
+#gallery-item-7 {
+    @include set-grid-item(1, span 4, 3, span 1);
+}
+
+#gallery-item-8 {
+    @include set-grid-item(5, span 4, 3, span 1);
+}
+
+#gallery-item-9 {
+    @include set-grid-item(9, span 4, 3, span 1);
+}
+
+#gallery-item-10 {
+    @include set-grid-item(1, span 4, 4, span 1);
+}
+
+#gallery-item-11 {
+    @include set-grid-item(5, span 4, 4, span 1);
+}
+
+#gallery-item-12 {
+    @include set-grid-item(9, span 4, 4, span 1);
+}
+
+@media (max-width: 376px) {
+    .gallery-item-location {
+        margin-bottom: 20px;
+    }
+
+    @for $i from 1 through 12 {
+        #gallery-item-#{$i} {
+            @include set-grid-item(1, span 4, #{$i}, span 1)
+        }
+    }
+}
+
+@media (min-width: 377px) and (max-width: 480px) { 
+    .gallery-item-location {
+        margin-bottom: 20px;
+    }
+
+    @for $i from 1 through 12 {
+        #gallery-item-#{$i} {
+            @include set-grid-item(1, span 6, #{$i}, span 1)
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 600px) {
+    .gallery-item-location {
+        margin-bottom: 20px;
+    }
+
+    @for $i from 1 through 12 {
+        #gallery-item-#{$i} {
+            @include set-grid-item(2, span 6, #{$i}, span 1)
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .gallery-item-location {
+        margin-bottom: 20px;
+    }
+
+    @for $i from 1 through 6 {
+        #gallery-item-#{$i * 2 - 1} {
+            @include set-grid-item( 1, span 4, #{$i}, span 1)
+        }
+        #gallery-item-#{$i * 2} {
+            @include set-grid-item( 5, span 4, #{$i}, span 1)
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gallery-item-location {
+        margin-bottom: 20px;
+    }
+
+    @for $i from 1 through 6 {
+        #gallery-item-#{$i * 2 - 1} {
+            @include set-grid-item( 1, span 6, #{$i}, span 1)
+        }
+        #gallery-item-#{$i * 2} {
+            @include set-grid-item( 7, span 6, #{$i}, span 1)
+        }
+    }
+}

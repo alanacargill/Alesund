@@ -1,0 +1,279 @@
+$footer-background: #222222;
+
+@mixin hover {
+    &:hover {
+        filter: invert(50%);
+        transition: ease-in-out 0.3s all;
+    }
+}
+
+.contact-footer {
+    background-color: $footer-background;
+    padding-top: 50px;
+    align-items: center;
+    .footer-logo {
+        grid-column-start: 1;
+        grid-column-end: span 3;
+        margin-bottom: 30px;
+        img {
+            @include hover;
+        }
+    }
+    .news {
+        grid-column-start: 1;
+        grid-column-end: span 5;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+        .latest-news {
+            padding-bottom: 5px;
+        }
+    }
+    .contact {
+        grid-column-start: 9;
+        grid-column-end: span 4;
+        grid-row-start: 1;
+        grid-row-end: span 2;
+    }
+    .address {
+        grid-column-start: 9;
+        grid-column-end: span 4;
+        grid-row-start: 2;
+        grid-row-end: span 1;
+        h5 {
+            padding: 2px 0;
+        }
+        .coordinates {
+            display: flex;
+            align-items: center;
+            img {
+                margin-right: 5px;
+            }
+        }
+    }
+    .social-media {
+        grid-column-start: 9;
+        grid-column-end: span 4;
+        grid-row-start: 3;
+        grid-row-end: span 1;
+        margin-bottom: 94px;
+        img {
+            margin-right: 10px;
+            margin-top: 20px;
+            @include hover;
+        } 
+    }
+}
+
+.copyright-footer {
+    background-color: #101010;
+    padding: 26px 0;
+    .copyright-info{
+        grid-column-start: 1;
+        grid-column-end: span 3;
+    }
+    .site-by {
+        grid-column-start: 11;
+        grid-column-end: span 2;
+        justify-self: end;
+    }
+    span {
+        @include hover;
+    }
+}
+
+@media (max-width: 376px) {
+    .contact-footer {
+        padding-top: 30px;
+        .footer-logo {
+            grid-column-end: span 2;
+            grid-row-start: 1;
+            width: auto;
+            height: 42px;
+        }
+        .news {
+            display: none;
+        }
+        .contact {
+            grid-column-start: 1;
+            grid-column-end: span 4;
+            grid-row-start: 2;
+            grid-row-end: span 1;
+            margin-bottom: 20px;
+        }
+        .address {
+            grid-column-start: 1;
+            grid-column-end: span 4;
+            grid-row-start: 3;
+        }
+        .social-media {
+            grid-column-start: 1;
+            grid-column-end: span 4;
+            grid-row-start: 4;
+        }
+    }
+
+    .copyright-footer {
+        .copyright-info{
+            grid-row-start: 1;
+        }
+        .site-by {
+            grid-column-start: 3;
+            grid-column-end: span 2;
+            grid-row-start: 1;
+        }
+    }
+}
+
+
+@media (min-width: 377px) and (max-width: 480px) {
+    .contact-footer {
+        padding-top: 30px;
+        .footer-logo {
+            grid-column-end: span 2;
+            grid-row-start: 1;
+            width: auto;
+            height: 42px;
+        }
+        .news {
+            display: none;
+        }
+        .contact {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 2;
+            grid-row-end: span 1;
+            margin-bottom: 20px;
+        }
+        .address {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 3;
+            grid-row-end: span 1;
+        }
+        .social-media {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 4;
+        }
+    }
+
+    .copyright-footer {
+        .copyright-info{
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 1;
+        }
+        .site-by {
+            grid-column-start: 5;
+            grid-column-end: span 2;
+            grid-row-start: 1;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .contact-footer {
+        .footer-logo {
+            grid-column-start: 1;
+            grid-column-end: span 8;
+            grid-row-start: 1;
+        }
+        .news {
+            grid-column-start: 1;
+            grid-column-end: span 8;
+            margin-bottom: 30px;
+        }
+        .contact {
+            grid-column-start: 1;
+            grid-column-end: span 8;
+            grid-row-start: 3;
+            grid-row-end: span 1;
+            margin-bottom: 20px;
+        }
+        .address {
+            grid-column-start: 1;
+            grid-column-end: span 8;
+            grid-row-start: 4;
+            grid-row-end: span 1;
+        }
+        .social-media {
+            grid-column-start: 1;
+            grid-column-end: span 8;
+            grid-row-start: 5;
+        }
+    }
+    .copyright-footer {
+        .copyright-info{
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 1;
+        }
+        .site-by {
+            grid-column-start: 7;
+            grid-column-end: span 2;
+            grid-row-start: 1;
+        }
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-footer {
+        padding-top: 30px;
+        .footer-logo {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 1;
+        }
+        .news {
+            grid-column-start: 1;
+            grid-column-end: span 12;
+            grid-row-start: 2;
+            grid-row-end: span 1;
+            margin-bottom: 30px;
+            .latest-news {
+                padding-bottom: 5px;
+            }
+        }
+        .contact {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 3;
+            grid-row-end: span 1;
+            margin-bottom: 20px;
+        }
+        .address {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 4;
+            grid-row-end: span 1;
+        }
+        .social-media {
+            grid-column-start: 1;
+            grid-column-end: span 6;
+            grid-row-start: 5;
+        }
+    }
+    .copyright-footer {
+        .site-by {
+            grid-column-start: 10;
+            grid-column-end: span 3;
+        }
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .contact-footer {
+        .contact {
+            grid-column-start: 7;
+            grid-column-end: span 6;
+        }
+        .address {
+            grid-column-start: 7;
+            grid-column-end: span 6;
+        }
+        .social-media {
+            grid-column-start: 7;
+            grid-column-end: span 6;
+        }
+    }
+}
