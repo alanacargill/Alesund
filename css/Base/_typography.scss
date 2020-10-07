@@ -205,6 +205,74 @@ a {
     }
 }
 
+.process-further-links {
+    font-family: 'Helvetica Bold';
+    text-align: left;
+    color: #000000;
+    font-size: 32px;
+}
+
+// people
+
+.people-page-title {
+    font-size: 82px;
+    font-family: 'Helvetica Bold';
+    text-align: left;
+    color: #000000;
+    margin: 0 74px;
+    margin-bottom: 100px;
+}
+
+.person-name {
+    font-size: 32px;
+    font-family: 'Helvetica Bold';
+    text-align: left;
+    color: #000000;
+    margin-bottom: 6px;
+
+}
+
+.person-title {
+    font-size: 32px;
+    font-family: 'Helvetica Reg';
+    text-align: left;
+    color: #000000;
+    margin-bottom: 28px;
+}
+
+.person-description {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    color: #000000;
+    margin-bottom: 28px;
+    line-height: 1.6;
+}
+
+.person-read-more {
+    color: #0027FF;
+    font-family: 'Helvetica Reg';
+    text-align: left;
+    font-size: 24px;
+}
+
+.ajax-person-name {
+    font-size: 32px;
+    font-family: 'Helvetica Bold';
+    text-align: left;
+    color: #000000;
+}
+.ajax-person-title {
+    font-size: 32px;
+    font-family: 'Helvetica Reg';
+    text-align: left;
+    color: #000000;
+}
+.ajax-person-description {
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+}
 
 @media (max-width: 376px) {      
     
@@ -253,6 +321,72 @@ a {
     }
     .author-text {
         font-size: 14px;
+    }
+    
+    //process
+
+    .process-header {
+        h1 {
+            font-size: 60px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+        .read-more-section {
+            font-size: 14px;
+        }
+    }
+    
+    .process-article {
+        .process-article-bold {
+            font-size: 24px;
+        }
+        .process-article-reg {
+            font-size: 20px;
+        }
+    }
+    
+    .process-further-links {
+        font-size: 24px;
+    }
+
+    // people 
+
+    .people-page-title {
+        font-size: 52px;
+        margin: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    .person-name {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .person-title {
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+
+    .person-description {
+        font-size: 18px;
+        margin-bottom: 28px;
+        line-height: 1.6;
+    }
+
+    .person-read-more {
+        font-size: 18px;
+    }
+        
+    .ajax-person-name {
+        font-size: 24px;
+    }
+    .ajax-person-title {
+        font-size: 24px;
+    }
+    .ajax-person-description {
+        font-size: 18px;
+        line-height: 1.6;
     }
 }
 
@@ -305,6 +439,62 @@ a {
     .author-text {
         font-size: 14px;
     }
+
+        //process
+
+    .process-header {
+        h1 {
+            font-size: 70px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        .read-more-section {
+            font-size: 14px;
+        }
+    }
+    
+    .process-further-links {
+        font-size: 24px;
+    }
+
+    // people 
+
+    .people-page-title {
+        font-size: 52px;
+        margin: 0 40px;
+        margin-bottom: 30px;
+    }
+
+    .person-name {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .person-title {
+        font-size: 22px;
+        margin-bottom: 28px;
+    }
+
+    .person-description {
+        font-size: 18px;
+        margin-bottom: 28px;
+        line-height: 1.6;
+    }
+
+    .person-read-more {
+        font-size: 18px;
+    }
+    .ajax-person-name {
+        font-size: 24px;
+    }
+    .ajax-person-title {
+        font-size: 24px;
+    }
+    .ajax-person-description {
+        font-size: 18px;
+        line-height: 1.6;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px) {
@@ -326,10 +516,105 @@ a {
     .author-text {
         font-size: 18px;
     }
+
+    // process
+
+    .process-header {
+        h1 {
+            font-size: 70px;
+        }
+        h2 {
+            font-size: 40px;
+        }
+        .read-more-section {
+            font-size: 14px;
+        }
+    }
+
+    .people-page-title {
+        font-size: 66px;
+        margin: 0 40px;
+        margin-bottom: 30px;
+    }
+
+    .person-name {
+        font-size: 26px;
+        margin-bottom: 6px;
+    }
+
+    .person-title {
+        font-size: 26px;
+        margin-bottom: 28px;
+    }
+
+    .person-description {
+        font-size: 22px;
+        margin-bottom: 28px;
+        line-height: 1.6;
+    }
+
+    .person-read-more {
+        font-size: 22px;
+    }
+    .ajax-person-name {
+        font-size: 28px;
+    }
+    .ajax-person-title {
+        font-size: 28px;
+    }
+    .ajax-person-description {
+        font-size: 22px;
+        line-height: 1.6;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .widget-title {
         margin-bottom: 60px;
+    }
+
+    // people
+
+    .people-page-title {
+        font-size: 72px;
+        margin-bottom: 80px;
+    }
+
+    .person-name {
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    .person-title {
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+
+    .person-description {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .person-read-more {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+
+    .person-name {
+        font-size: 28px;
+    }
+
+    .person-title {
+        font-size: 28px;
+    }
+
+    .person-description {
+        font-size: 24px;
+    }
+
+    .person-read-more {
+        font-size: 24px;
     }
 }
