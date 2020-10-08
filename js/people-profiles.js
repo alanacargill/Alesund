@@ -67,9 +67,9 @@ $(document).ready(function(){
     $closeAjaxButton = $("#closeAjaxButton");
     $('.person-read-more').click(function () {
         $.ajax({
-            url: "./person.html", 
+            url: "./person",
             success: function(result) {
-                $ajaxContainer.append(result);
+                $ajaxContainer.html(result);
                 console.log(result);
             }
         });
