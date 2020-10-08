@@ -2769,20 +2769,20 @@ html {
   transition: 0.5s ease all;
 }
 
-.ajax- .ajax-container {
+.ajax-container {
   position: fixed;
   left: 0;
   top: 100%;
   background-color: #ffffff;
 }
-.ajax- .ajax-container .ajax-close-button {
+.ajax-container .ajax-close-button {
   cursor: pointer;
   grid-column: 12/span 1;
   grid-row: 1;
   margin-top: 74px;
   justify-self: end;
 }
-.ajax- .ajax-container .ajax-close-button:hover {
+.ajax-container .ajax-close-button:hover {
   filter: invert(50%);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
