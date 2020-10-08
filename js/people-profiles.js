@@ -63,18 +63,18 @@
 // })();
 
 $(document).ready(function(){
-    $ajaxContainer = $(".ajaxContainer");
-    $closeAjaxButton = $(".closeAjaxButton");
+    $ajaxContainerContent = $(".ajax-container-content");
+    $closeAjaxButton = $(".ajax-close-button");
     $('.person-read-more').click(function () {
         $.ajax({
             url: "./person",
             success: function(result) {
-                $ajaxContainer.html(result);
+                $ajaxContainerContent.html(result);
                 console.log(result);
             }
         });
     });
     $closeAjaxButton.click(function () {
-        $ajaxContainer.empty();
+        $ajaxContainerContent.empty();
     })
 });
