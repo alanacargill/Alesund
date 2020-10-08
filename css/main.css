@@ -2920,6 +2920,7 @@ html {
     grid-column: 1/span 4;
     grid-row: 1;
     margin-bottom: 20px;
+    margin-top: 74px;
   }
 }
 @media (min-width: 377px) and (max-width: 480px) {
@@ -3013,6 +3014,7 @@ html {
     grid-column: 1/span 6;
     grid-row: 1;
     margin-bottom: 30px;
+    margin-top: 74px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -3103,6 +3105,7 @@ html {
     grid-column: 1/span 8;
     grid-row: 1;
     margin-bottom: 40px;
+    margin-top: 74px;
   }
 }
 @media (min-width: 769px) and (max-width: 900px) {
