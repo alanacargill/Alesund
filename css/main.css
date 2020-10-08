@@ -2788,7 +2788,6 @@ html {
   transition: all 0.3s ease-in-out;
 }
 .ajax-container .ajax-container-content {
-  overflow: scroll;
   margin-top: 74px;
 }
 .ajax-container .ajax-container-content .person-info {
@@ -2799,6 +2798,9 @@ html {
   grid-column: 1/span 6;
   margin-right: 30px;
   grid-row: 2;
+}
+.ajax-container .ajax-container-content .person-description p {
+  margin-bottom: 20px;
 }
 .ajax-container .ajax-container-content .person-image-container {
   grid-column: 7/span 6;

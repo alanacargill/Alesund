@@ -122,7 +122,6 @@
         }
     }
     .ajax-container-content {
-        overflow: scroll;
         margin-top: 74px;
         .person-info {
             grid-column: 1 / span 6;
@@ -132,6 +131,9 @@
             grid-column: 1 / span 6;
             margin-right: 30px;
             grid-row: 2;
+            p {
+                margin-bottom: 20px;
+            }
         }
         .person-image-container {
             grid-column: 7 / span 6;
