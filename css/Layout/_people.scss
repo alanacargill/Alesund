@@ -199,8 +199,15 @@
             margin-top: 20px;
             .person-info {
                 grid-column: 1 / span 4;
-                margin-right: 30px;
                 grid-row: 2;
+            }
+            .person-description {
+                grid-column: 1 / span 4;
+                margin-right: 30px;
+                grid-row: 3;
+                p {
+                    margin-bottom: 20px;
+                }
             }
             .person-image-container {
                 grid-column: 1 / span 4;
@@ -208,7 +215,6 @@
             }
         }
     }
-    
 }
   
 @media (min-width: 377px) and (max-width: 480px) {
@@ -248,8 +254,15 @@
             margin-top: 30px;
             .person-info {
                 grid-column: 1 / span 6;
-                margin-right: 30px;
                 grid-row: 2;
+            }
+            .person-description {
+                grid-column: 1 / span 6;
+                margin-right: 30px;
+                grid-row: 3;
+                p {
+                    margin-bottom: 20px;
+                }
             }
             .person-image-container {
                 grid-column: 1 / span 6;
@@ -296,8 +309,15 @@
             margin-top: 40px;
             .person-info {
                 grid-column: 1 / span 8;
-                margin-right: 30px;
                 grid-row: 2;
+            }
+            .person-description {
+                grid-column: 1 / span 8;
+                margin-right: 30px;
+                grid-row: 3;
+                p {
+                    margin-bottom: 20px;
+                }
             }
             .person-image-container {
                 grid-column: 1 / span 8;
@@ -317,40 +337,40 @@
             margin-top: 8px;
         }
     }
-    .ajax-container {
-        .ajax-close-button {
-            cursor: pointer;
-            grid-column: 12 / span 1;
-            grid-row: 1;
-            margin-top: 74px;
-        }
-        .ajax-person-name {
-            grid-column: 1 / span 12;
-            grid-row: 1;
-            margin-top: 74px;
-            margin-bottom: 6px;
-        }
-        .ajax-person-title {
-            grid-column: 1 / span 12;
-            grid-row: 2;
-            margin-bottom: 40px;
-        }
-        .ajax-person-description {
-            grid-column: 1 / span 12;
-            grid-row: 4 / span 1;
-            margin-right: 0;
-            margin-bottom: 74px;
-            p {
-                margin-bottom: 20px;
-            }
-        }
-        .ajax-person-image {
-            width: 100%;
-            padding-bottom: 40px;
-            grid-column: 1 / span 12;
-            grid-row: 3 / span 1;
-        }
-    }
+    // .ajax-container {
+    //     .ajax-close-button {
+    //         cursor: pointer;
+    //         grid-column: 12 / span 1;
+    //         grid-row: 1;
+    //         margin-top: 74px;
+    //     }
+    //     .ajax-person-name {
+    //         grid-column: 1 / span 12;
+    //         grid-row: 1;
+    //         margin-top: 74px;
+    //         margin-bottom: 6px;
+    //     }
+    //     .ajax-person-title {
+    //         grid-column: 1 / span 12;
+    //         grid-row: 2;
+    //         margin-bottom: 40px;
+    //     }
+    //     .ajax-person-description {
+    //         grid-column: 1 / span 12;
+    //         grid-row: 4 / span 1;
+    //         margin-right: 0;
+    //         margin-bottom: 74px;
+    //         p {
+    //             margin-bottom: 20px;
+    //         }
+    //     }
+    //     .ajax-person-image {
+    //         width: 100%;
+    //         padding-bottom: 40px;
+    //         grid-column: 1 / span 12;
+    //         grid-row: 3 / span 1;
+    //     }
+    // }
 }
 
 @media (min-width: 901px) and (max-width: 1024px) {
