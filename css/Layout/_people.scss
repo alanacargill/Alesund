@@ -127,7 +127,26 @@
         }
         .person-image-container {
             grid-column: 7 span 6;
-            
+            position: relative;
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            margin: 0;
+            .person-image {
+                width: 100%;
+                height: 0;
+                display: block;  
+                position: relative; 
+                padding-bottom: 72.3%;  
+                img {
+                    width: inherit;
+                    height: 100%;
+                    position: absolute;
+                    object-fit: cover;
+                    margin: 0;
+                    display: block;
+                }
+            }
         }
     }
 }
