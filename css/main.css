@@ -2772,6 +2772,8 @@ html {
 .ajax-container {
   position: fixed;
   left: 0;
+  bottom: 0;
+  overflow: scroll;
   top: 100%;
   background-color: #ffffff;
 }
