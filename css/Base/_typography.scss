@@ -17,6 +17,14 @@
     color: #ffffff;
 }
 
+@mixin boldwhitehelvetica18px {
+    font-family: 'Helvetica Bold';
+    font-size: 18px;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
 @mixin image-caption {
     color: #888888;
     font-family: 'Helvetica Reg';
@@ -54,11 +62,7 @@ a {
 }
 
 .address-bold {
-    font-family: 'Helvetica Bold';
-    font-size: 18px;
-    text-align: left;
-    letter-spacing: 1px;
-    color: #ffffff;
+    @include boldwhitehelvetica18px;
 }
 
 .underline {
@@ -95,10 +99,7 @@ a {
 //homepage
 
 .gallery-item-description {
-    font-family: 'Helvetica Bold';
-    font-size: 18px;
-    text-align: left;
-    color: #ffffff;
+    @include boldwhitehelvetica18px;
     padding-top: 20px;
     padding-bottom: 5px;
 }
