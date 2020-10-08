@@ -25,10 +25,6 @@
 
 .person-section {
     margin-bottom: 100px;
-    .person-description {
-        height: 250px;
-        overflow: hidden;
-    }
     .person-read-more {
         cursor: pointer;
         display: flex;
@@ -107,7 +103,7 @@
 .ajax-container {
     position: fixed;
     left: 0;
-    bottom: 0;
+    height: 100%;
     overflow: scroll;
     top: 100%;
     background-color: #ffffff;

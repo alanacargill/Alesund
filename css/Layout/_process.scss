@@ -2,16 +2,19 @@ html {
     scroll-behavior: smooth;
 }
 
-.process-header {
-    background: url('Images/process-background-image.png') no-repeat fixed center;
+.process-header-container {
+    background: url(Images/process-background-image.png) no-repeat center;
     background-size: cover;
     width: 100vw;
-    height: 750px;
+    height: 800px;
     top: 0;
     position: absolute;
     z-index: -1;
+}
+
+.process-header {
     h1 {
-        padding-top: 360px;
+        padding-top: 200px;
         margin: 0 74px;
     }
     h2 {
@@ -66,8 +69,9 @@ html {
 }
 
 .process-article {
-   margin-top: 750px;
-   padding-top: 50px;
+    background-color: #ffffff;
+    padding-top: 50px;
+    margin-top: 800px;
     .process-article-bold {
         grid-column: 1 / span 6;
         grid-row: 1 / span 1;
@@ -103,7 +107,8 @@ html {
 }
 
 .process-further-links {
-    margin-bottom: 220px;
+    padding-bottom: 220px;
+    background-color: #ffffff;
     .link-section {
         div {
             cursor: pointer;
@@ -149,7 +154,7 @@ html {
 
 @media (max-width: 376px) {
     .process-header {
-        height: 500px;
+        height: 600px;
         h1 {
             padding-top: 100px;
             margin: 0 20px;
@@ -163,7 +168,6 @@ html {
     }
 
     .process-article {
-        margin-top: 500px;
         .process-article-bold {
             grid-column: 1 / span 4;
             grid-row: 1 / span 1;
@@ -201,7 +205,7 @@ html {
 
     .process-further-links {
         margin: 0 40px;
-        margin-bottom: 90px;
+        padding-bottom: 90px;
         .link-section {
             div {
                 &:hover {
@@ -218,8 +222,8 @@ html {
 }
   
 @media (min-width: 377px) and (max-width: 480px) {
-    .process-header {
-        height: 600px;  
+    .process-header-container {
+        height: 600px;
         h1 {
             padding-top: 100px;
             margin: 0 30px;
@@ -271,7 +275,7 @@ html {
 
     .process-further-links {
         margin: 0 40px;
-        margin-bottom: 90px;
+        padding-bottom: 90px;
         .link-section {
             div {
                 &:hover {
@@ -288,10 +292,10 @@ html {
 }
   
 @media (min-width: 481px) and (max-width: 768px) {
-    .process-header {
-        height: 800px;
+    .process-header-container {
+        height: 500px;
         h1 {
-            padding-top: 200px;
+            padding-top: 100px;
             margin: 0 40px;
         }
         h2 {
@@ -303,7 +307,7 @@ html {
     }
 
     .process-article {
-        margin-top: 800px;
+        margin-top: 500px;
         .process-article-bold {
             grid-column: 1 / span 8;
             grid-row: 1 / span 1;
@@ -341,7 +345,7 @@ html {
 
     .process-further-links {
         margin: 0 40px;
-        margin-bottom: 90px;
+        padding-bottom: 120px;
         .link-section {
             div {
                 &:hover {
@@ -358,13 +362,17 @@ html {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .process-header {
+    .process-header-container {
+        height: 600px;
         .read-more-section {
             margin-top: 100px;
         }
         h1 {
-            padding-top: 200px;
+            padding-top: 50px;
         }
+    }
+    .process-article {
+        margin-top: 600px;
     }
     .link-section {
         div {
@@ -375,7 +383,13 @@ html {
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1200px) {
+@media (min-width: 1025px) and (max-width: 1200px) {
+    .process-header-container {
+        height: 700px;
+    }
+    .process-article {
+        margin-top: 700px;
+    }
     .process-header {
         h1 {
             padding-top: 200px;
