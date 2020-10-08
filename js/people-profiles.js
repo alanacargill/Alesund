@@ -63,8 +63,8 @@
 // })();
 
 $(document).ready(function(){
-    $ajaxContainer = $("#ajaxContainer");
-    $closeAjaxButton = $("#closeAjaxButton");
+    $ajaxContainer = $(".ajaxContainer");
+    $closeAjaxButton = $(".closeAjaxButton");
     $('.person-read-more').click(function () {
         $.ajax({
             url: "./person",
