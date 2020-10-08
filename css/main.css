@@ -2763,7 +2763,7 @@ html {
   grid-row: 1/span 1;
 }
 
-.ajax-container-fill {
+.ajax-container.ajax-container-fill {
   top: 0;
   z-index: 1;
   transition: 0.5s ease all;
@@ -2773,6 +2773,7 @@ html {
   position: fixed;
   left: 0;
   top: 100%;
+  background-color: #ffffff;
 }
 .ajax-container .ajax-close-button {
   cursor: pointer;
