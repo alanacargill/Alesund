@@ -98,11 +98,16 @@
     }
 }
 
-.ajax-container {
-    display: none;
+.ajax-container-fill {
+    top: 0;
+    z-index: 1;
+    transition: 0.5s ease all;
 }
 
 .ajax-container {
+    position: fixed;
+    left: 0;
+    top: 100%;
     .ajax-close-button {
         cursor: pointer;
         grid-column: 12 / span 1;

@@ -73,8 +73,10 @@ $(document).ready(function(){
                 console.log(result);
             }
         });
+        $('.ajax-container').addClass('ajax-container-fill');
     });
     $closeAjaxButton.click(function () {
         $ajaxContainerContent.empty();
+        $('.ajax-container').removeClass('ajax-container-fill');
     })
 });
