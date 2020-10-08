@@ -2775,6 +2775,11 @@ html {
   top: 100%;
   background-color: #ffffff;
 }
+.ajax-container .ajax-container-content {
+  grid-column: 1/span 12;
+  grid-row: 1;
+  margin-top: 74px;
+}
 .ajax-container .ajax-close-button {
   cursor: pointer;
   grid-column: 12/span 1;
