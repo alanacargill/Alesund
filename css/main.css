@@ -2917,6 +2917,7 @@ html {
   .ajax-container .ajax-container-content .person-image-container {
     grid-column: 1/span 4;
     grid-row: 1;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 377px) and (max-width: 480px) {
@@ -3009,6 +3010,7 @@ html {
   .ajax-container .ajax-container-content .person-image-container {
     grid-column: 1/span 6;
     grid-row: 1;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -3095,12 +3097,10 @@ html {
     margin-right: 30px;
     grid-row: 3;
   }
-  .ajax-container .ajax-container-content .person-description p {
-    margin-bottom: 20px;
-  }
   .ajax-container .ajax-container-content .person-image-container {
     grid-column: 1/span 8;
     grid-row: 1;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 769px) and (max-width: 900px) {
