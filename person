@@ -11,7 +11,3 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque lorem vitae leo efficitur, vitae auctor ante tempus. Curabitur massa orci, interdum vitae lacus in, ultricies pharetra magna. Curabitur tincidunt arcu in elementum sollicitudin. Quisque non ullamcorper dui. Etiam a dolor a orci ornare volutpat. Nam in ex id metus auctor vehicula et in leo. In tempor est nec massa pellentesque mollis. Phasellus vel odio id nunc scelerisque malesuada sed ut tortor. Praesent auctor sem a tristique tempus. Nam quis facilisis orci.</p>
     <p>Quisque purus turpis, pharetra sit amet tincidunt vitae, aliquam eu risus. Morbi vel tellus sed lacus ultrices varius. Sed nibh felis, egestas in justo vel, facilisis imperdiet felis. Duis vitae gravida nibh. Cras sed elit a nisl porttitor tincidunt et eget lorem. Morbi consectetur cursus massa id vestibulum. Aenean vestibulum et massa et dapibus. In malesuada at elit sit amet venenatis. Praesent scelerisque ligula et felis pellentesque mollis. In eget enim vitae magna tempor imperdiet in id tellus. Quisque eget purus arcu. Proin sapien elit, pretium non blandit id, porttitor vitae magna.</p>
 </div>
-<div class="person-read-more">
-    <p>Read more</p>
-    <img src="css/SVGs/blue-arrow.svg">
-</div>
