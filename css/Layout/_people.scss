@@ -29,9 +29,21 @@
         cursor: pointer;
         display: flex;
         align-items: center;
-        margin-top: 50px;
+        p:hover + img {
+            transform: rotate(270deg) translateY(5px);
+            -webkit-transform: rotate(270deg) translateY(5px);
+            -o-transform: rotate(270deg) translateY(5px);
+            -moz-transform: rotate(270deg) translateY(5px);
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out; 
+            -o-transition: all 0.3s ease-in-out; 
+        }
         img {
             transform: rotate(270deg);
+            -webkit-transform: rotate(270deg);
+            -o-transform: rotate(270deg);
+            -moz-transform: rotate(270deg);
             padding: 5px;
             border: solid 2px #0027FF;
             border-radius: 50%;
