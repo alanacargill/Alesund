@@ -173,21 +173,27 @@ a {
 
 // process 
 
-.process-header {
-    font-family: 'Helvetica Bold';
-    text-align: left;
-    color: #ffffff;
-    h1 {
-        font-size: 82px;
-    }
-    h2 {
-        font-size: 48px;
+.process-header-container {
+    .process-header-text {
+        font-family: 'Helvetica Bold';
+        text-align: left;
+        color: #ffffff;
+        h1 {
+            font-size: 82px;
+        }
+        h2 {
+            font-size: 48px;
+        }
     }
     .read-more-section {
         text-transform: uppercase;
         font-size: 18px;
+        font-family: 'Helvetica Bold';
+        text-align: left;
+        color: #ffffff;
     }
 }
+    
 
 .process-article {
     .process-article-bold {
@@ -230,7 +236,6 @@ a {
     text-align: left;
     color: #000000;
     margin-bottom: 6px;
-
 }
 
 .person-title {
@@ -325,13 +330,15 @@ a {
     }
     
     //process
-
-    .process-header {
-        h1 {
-            font-size: 60px;
-        }
-        h2 {
-            font-size: 30px;
+    .process-header-container {
+        .process-header-text {
+            h1 {
+                font-size: 60px;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 30px;
+            }
         }
         .read-more-section {
             font-size: 14px;
@@ -443,12 +450,15 @@ a {
 
         //process
 
-    .process-header {
-        h1 {
-            font-size: 70px;
-        }
-        h2 {
-            font-size: 40px;
+    .process-header-container {
+        .process-header-text {
+            h1 {
+                font-size: 70px;
+                margin-bottom: 10px;
+            }
+            h2 {
+                font-size: 40px;
+            }
         }
         .read-more-section {
             font-size: 14px;
@@ -580,42 +590,5 @@ a {
         font-size: 72px;
         margin-bottom: 80px;
     }
-
-    .person-name {
-        font-size: 24px;
-        margin-bottom: 6px;
-    }
-
-    .person-title {
-        font-size: 24px;
-        margin-bottom: 8px;
-    }
-
-    .person-description {
-        font-size: 20px;
-        margin-bottom: 8px;
-    }
-
-    .person-read-more {
-        font-size: 20px;
-    }
 }
 
-@media (min-width: 1025px) and (max-width: 1200px) {
-
-    .person-name {
-        font-size: 28px;
-    }
-
-    .person-title {
-        font-size: 28px;
-    }
-
-    .person-description {
-        font-size: 24px;
-    }
-
-    .person-read-more {
-        font-size: 24px;
-    }
-}
