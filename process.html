@@ -26,15 +26,30 @@
 <body class="process-body">
 
     <div class="process-header-container">
-        <header>
-            <div class="logo">
-                <a href="index.html"><img src="css/SVGs/white-logo.svg" alt="logo"></a>
+
+        <div class="bg-image parallax-bg"></div>
+        <div class="header-content">
+            <header>
+                <div class="logo">
+                    <a href="index.html"><img src="css/SVGs/white-logo.svg" alt="logo"></a>
+                </div>
+                <div class="icon-container">
+                    <img class="search" src="css/SVGs/white-search.svg">
+                    <img class="menu-icon" src="css/SVGs/white-menu.svg" id="show-menu">
+                </div>
+            </header>
+
+            <div class="process-header-text">
+                <h1>Our Process</h1>
+                <h2>What we do and how we do it</h2>
             </div>
-            <div class="icon-container">
-                <img class="search" src="css/SVGs/white-search.svg">
-                <img class="menu-icon" src="css/SVGs/white-menu.svg" id="show-menu">
-            </div>
-        </header>
+            
+            <a href="#article" class="read-more-section">
+                <img src="css/SVGs/down-arrow.svg" alt="down arrow">
+                <p>Read More</p>
+            </a>
+        </div>
+        
     
         <nav>
             <div class="menu side-menu right-menu">
@@ -69,15 +84,6 @@
             </div>
         </nav>
 
-        <div class="process-header-text">
-            <h1>Our Process</h1>
-            <h2>What we do and how we do it</h2>
-        </div>
-        
-        <a href="#article" class="read-more-section">
-            <img src="css/SVGs/down-arrow.svg" alt="down arrow">
-            <p>Read More</p>
-        </a>
     </div>
 
     <article class="process-article grid" id="article">
@@ -144,6 +150,8 @@
         </div>
     </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/parallax.js"></script>
   <script src="js/video.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
